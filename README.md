@@ -14,11 +14,11 @@ We're using Elixir and Event Store versions that are slightly older than the mos
 ## Running
 
 1. Start the Event Store in its own shell
-  - `docker run -it -p 2113:2113 -p 1113:1113 -e EVENTSTORE_START_STANDARD_PROJECTIONS=true -e EVENTSTORE_RUN_PROJECTIONS=all eventstore/eventstore:release-4.0.3`
+   - `docker run -it -p 2113:2113 -p 1113:1113 -e EVENTSTORE_START_STANDARD_PROJECTIONS=true -e EVENTSTORE_RUN_PROJECTIONS=all eventstore/eventstore:release-4.0.3`
 2. Prepare build in another shell
-  - `mix deps.get`
+   - `mix deps.get`
 3. Start Commanded POC
-  - `iex -S mix`
+   - `iex -S mix`
 
 When the application is running you can generate a new command in IEx by calling the register function. Then observe the behavior in the logs.
 `Trial.register("a@example.com", "password")`
